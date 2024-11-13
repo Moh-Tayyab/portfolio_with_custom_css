@@ -1,0 +1,35 @@
+.header {
+  color: #38b2ac; /* text-teal-500 */
+  background-color: black; /* bg-black */
+}
+
+.container {
+  max-width: 100%;
+}
+
+.logo {
+  color: #38b2ac; /* text-teal-400 */
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.navLink:hover {
+  color: #38b2ac; /* text-teal-500 */
+}

@@ -1,0 +1,41 @@
+.heroSection {
+    background-color: #1a202c;
+    color: #a0aec0;
+  }
+  
+  .backgroundOverlay {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+  }
+  
+  .neonCircle {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5);
+    transition: transform 0.5s ease;
+  }
+  
+  .bubble {
+    border-radius: 50%;
+    position: absolute;
+    animation: floatBubbles 10s ease-in-out infinite;
+    mix-blend-mode: screen;
+  }
+  
+  @keyframes floatBubbles {
+    0% {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-40px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+  }
+  

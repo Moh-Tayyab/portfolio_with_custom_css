@@ -1,0 +1,67 @@
+.section {
+    background: linear-gradient(to right, #1f2937, #000);
+    color: white;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    background-clip: text;
+    color: #38b2ac
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 215, 0.6);
+  }
+  
+  .icon {
+    color: #38b2ac;
+    font-size: 4rem;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .neonBorder {
+    position: absolute;
+    inset: 0;
+    border: 4px solid transparent;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neonBorder:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 215, 0.6);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .neonBorder {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6);
+    }
+  }
+  

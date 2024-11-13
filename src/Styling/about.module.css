@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; /* Change to column for mobile by default */
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    width: 320px;
+    height: auto;
+    padding-top: 2.5rem;
+    transition: width 0.3s ease;
+  }
+  
+  .profileImage:hover {
+    width: 350px;
+  }
+  
+  .textSection {
+    width: 100%;
+    margin-top: 1rem; /* Add space between image and text on small screens */
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .subTitle {
+    color: #38b2ac;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  
+  .description {
+    color: white;
+    font-size: 15px;
+    padding-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .downloadCVButton {
+    background-color: black;
+    color: #38b2ac;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #38b2ac;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1.25rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .downloadCVButton:hover {
+    background-color: #38b2ac;
+    color: black;
+  }
+  
+  /* Media Query for larger screens (Desktop) */
+  @media screen and (min-width: 1024px) {
+    .container {
+      flex-direction: row; /* Align image and text in a row for larger screens */
+    }
+  
+    .profileImage {
+      width: 350px;
+    }
+  
+    .title {
+      font-size: 50px;
+    }
+  
+    .subTitle {
+      font-size: 65px;
+    }
+  
+    .description {
+      font-size: 20px;
+    }
+  
+    .downloadCVButton {
+      font-size: 1.125rem;
+    }
+  
+    .textSection {
+      width: 50%; /* Set text section width to 50% on larger screens */
+      margin-top: 0; /* Remove top margin for row layout */
+    }
+  }
+  

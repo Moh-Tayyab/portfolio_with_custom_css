@@ -1,0 +1,70 @@
+.footerContainer {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #d1d5db; /* Tailwind gray-300 */
+}
+
+.footerBodyFont {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding: 1.5rem;
+}
+
+.footerTitle {
+  display: flex;
+  align-items: start;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.logoIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  background-color: #2dd4bf; /* Tailwind teal-500 */
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.titleText {
+  color: #2dd4bf; /* Tailwind teal-400 */
+}
+
+.emailLink {
+  color: #2dd4bf; /* Tailwind teal-400 */
+  text-decoration: none;
+  margin-left: 0.25rem;
+}
+
+.emailLink:hover {
+  color: #14b8a6; /* Tailwind teal-500 */
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: end;
+  justify-content: end;
+}
+
+.socialLink {
+  color: #9ca3af; /* Tailwind gray-400 */
+  transition: color 0.3s;
+}
+
+.socialLink:hover {
+  color: #2dd4bf; /* Tailwind teal-400 */
+}
+
+.socialIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
